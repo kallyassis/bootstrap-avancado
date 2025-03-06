@@ -1,13 +1,7 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.cabecalho{
+    background-color: #FFC0CB;
 }
 
-.container{
-    padding-top: 20px;
-}
-
-.minhas-img {
-    height: 600px;
+.roda-pe{
+    background-color: #FFC0CB;
 }

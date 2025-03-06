@@ -8,7 +8,7 @@
     <title>bootstrap</title>
 </head>
 <body>
-    <header>
+    <header class="cabecalho">
         <div class="container">
             <nav class="navbar">
                 <h1>Bootstrap</h1>
@@ -19,27 +19,23 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#noticia">Notícias</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contato">Contato</a>
-                    </li>
                     
                 </ul>
             </nav>
         </div>
     </header>
-
     <section id="inicio">
-        <div class="container">
+        <div class="container pt-3 pb-3">
             <div id="carouselExample" class="carousel carousel-fade slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div data-bs-interval="3000" class="carousel-item active">
-                        <div class="minhas-img"><img src="./img-carrosel/baloes.jpg" class="d-block w-100" alt="balões"></div>
+                        <div class="d-block w-100"><img src="./img-carrosel/baloes.jpg" class="d-block w-100" alt="balões"></div>
                     </div>
                     <div data-bs-interval="3000" class="carousel-item">
-                        <div class="minhas-img"><img src="./img-carrosel/dubai.jpg" class="d-block w-100" alt="dubai"></div>
+                        <div class="d-block w-100"><img src="./img-carrosel/dubai.jpg" class="d-block w-100" alt="dubai"></div>
                     </div>
                     <div data-bs-interval="3000" class="carousel-item">
-                        <div class="minhas-img"><img src="./img-carrosel/flowers.jpg" class="d-block w-100" alt="flores"></div>
+                        <div class="d-block w-100"><img src="./img-carrosel/flowers.jpg" class="d-block w-100" alt="flores"></div>
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -62,7 +58,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <article class="card">
-                        <img src="./img-card/floresta.jpg" alt="">
+                        <img class="" src="./img-card/floresta.jpg" alt="foto de floresta de gelo">
                         <div class="card-body">
                             <h4 class="card-title">Belezas do inverno: Um paraíso congleado</h4>
                         <p class="card-text">
@@ -79,7 +75,9 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <article class="card">
-                        <img src="./img-card/italia city.jpg" alt="">
+                        <div>
+                            <img class="d-block w-100" src="./img-card/italia city.jpg" alt="foto da italia">
+                        </div>
                         <div class="card-body">
                             <h4 class="card-title">A magia das cidades à noite</h4>
                         <p class="card-text">
@@ -96,7 +94,9 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <article class="card">
-                        <img src="./img-card/mar.jpg" alt="">
+                        <div>
+                            <img class="d-block w-100" src="./img-card/mar.jpg" alt="pôr do sol">
+                        </div>
                         <div class="card-body">
                             <h4 class="card-title">O espetáculo do pôr do sol</h4>
                             <p class="card-text">
@@ -110,9 +110,11 @@
                         </footer>
                     </article>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-2">
                     <article class="card">
-                        <img src="./img-card/treinoo.jpg" alt="">
+                        <div>
+                            <img class="d-block w-100" src="./img-card/treinoo.jpg" alt="foto de treino na academia">
+                        </div>
                         <div class="card-body">
                             <h4 class="card-title">Os benefícios da musculação para a saúde</h4>
                             <p class="card-text">
@@ -131,27 +133,11 @@
         </div>
     </section><!-- card -->
 
-    <section id="contato">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h2>Entre em Contato</h2>
-                    <form>
-                        <label class="form-label"  for="name">Nome</label>
-                        <input class="form-control form-control-md" id="name" type="text">
-                        <label class="form-label" for="email">Email</label>
-                        <input class="form-control form-md" id="email" type="email">
-                        <label class="form-label" for="tel">Telefone</label>
-                        <input class="form-control for-control-md" id="tel" type="tel">
-
-                        <button class="btn btn-success" type="button">Enviar</button>
-                    </form>
-                </div>
-                
-            </div>
-        </div>
-    </section><!-- contato -->
-
+    <footer class="roda-pe p-2 mt-2 ">
+        <p>
+            &copy; 2025 - todos os direitos reservados
+        </p>
+    </footer>
     <script src="./lib/bootstrap.bundle.min.js"></script><!-- Link Bootstrap -->
 </body>
 </html>
